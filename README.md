@@ -1,6 +1,6 @@
 # Mohammad Jawad Frogh — Professional Portfolio
 
-A clean, modern, fully responsive single-page portfolio website.
+A fully responsive single-page portfolio website.
 
 ## Features
 
