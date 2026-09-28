@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohammad Jawad Frogh — Computer Science student, Front-End Developer, English Instructor & Creative Designer based in Astana, Kazakhstan." />
+  <title>Mohammad Jawad Frogh | Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ========== NAVIGATION ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">MJF<span>.</span></a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="hero section" id="home">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <p class="hero__greeting">Hello, I'm</p>
+          <h1 class="hero__title">Mohammad Jawad <span>Frogh</span></h1>
+          <h2 class="hero__subtitle">
+            <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+          </h2>
+          <p class="hero__description">
+            Computer Science student at Astana IT University with strong skills in front-end development, 
+            Java, and creative design. Also an experienced English instructor and photographer. 
+            Passionate about building real-world solutions and continuous growth.
+          </p>
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="#contact" class="btn btn--outline">Get In Touch</a>
+          </div>
+          <div class="hero__social">
+            <a href="https://www.linkedin.com/in/mohammad-jawad-frogh-4320343b6" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/mjawadforogh2005-ship-it" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:255865@astana.it.edu.kz" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__image">
+          <div class="hero__img-wrapper">
+            <!-- Replace src with your profile photo -->
+            <img src="AI_ph.png" 
+                 alt="Mohammad Jawad Frogh" 
+                 class="hero__img" 
+                 id="profile-photo" />
+            <div class="hero__img-border"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll">
+        <a href="#about" class="scroll-down">
+          <span>Scroll</span>
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">A bit more about who I am</span>
+
+        <div class="about__container">
+          <div class="about__image">
+            <!-- Optional second photo (teaching / working) -->
+            <img src="codinig photo.jpg" 
+                 alt="Working / Teaching" 
+                 class="about__img" />
+          </div>
+
+          <div class="about__data">
+            <p class="about__description">
+              I'm a second-year Computer Science student at <strong>Astana IT University</strong> in Kazakhstan, 
+              with a strong foundation in front-end development (HTML5, CSS, React) and advanced proficiency in Java. 
+              I also bring several years of professional experience as an English language instructor, 
+              photographer, and graphic designer.
+            </p>
+            <p class="about__description">
+              Beyond code, I've taught English for years, worked in high-school administration, 
+              designed visuals for clients, and gained industry exposure as a YP agent at MTN Afghanistan. 
+              This mix of technical skills and real-world communication experience helps me build 
+              user-focused products and collaborate effectively in teams.
+            </p>
+
+            <div class="about__info">
+              <div class="about__info-item">
+                <span class="about__info-title">3.2</span>
+                <span class="about__info-name">GPA / 4.0</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-title">5+</span>
+                <span class="about__info-name">Years graphic Designing & Photography</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-title">2+</span>
+                <span class="about__info-name">Years Teaching English</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn--primary">Let's Connect</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <h2 class="section__title">Experience</h2>
+        <span class="section__subtitle">Professional & teaching background</span>
+
+        <div class="experience__container">
+          <div class="timeline">
+            <!-- Item 1 -->
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__date">2017 – 2026</span>
+                <h3 class="timeline__title">English Language Instructor</h3>
+                <p class="timeline__company">Personal Courses & KACSO Organization</p>
+                <p class="timeline__description">
+                  Taught English for a total of 4 years (2 years in personal courses + 2 years at KACSO Organization). 
+                  Designed lessons, assessed progress, and helped students improve communication skills.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__date">~2 Years</span>
+                <h3 class="timeline__title">High School Administration</h3>
+                <p class="timeline__company">Administrative Role</p>
+                <p class="timeline__description">
+                  Managed administrative tasks and supported school operations, developing strong organizational 
+                  and project-management skills.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__date">5 Years</span>
+                <h3 class="timeline__title">Photographer & Graphic Designer</h3>
+                <p class="timeline__company">Personal Work & Asia Graphics</p>
+                <p class="timeline__description">
+                  Created visual content using Adobe Photoshop, CorelDRAW and Illustrator. Handled client 
+                  projects, advertising materials, and event photography.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__date">8 Months</span>
+                <h3 class="timeline__title">YP Agent</h3>
+                <p class="timeline__company">MTN Afghanistan</p>
+                <p class="timeline__description">
+                  Worked as a Young Professional agent, gaining exposure to corporate environments, 
+                  customer service, and professional communication.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Selected academic & personal work</span>
+
+        <div class="projects__container">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&h=400&fit=crop" 
+                   alt="ShotMarket – Photo Delivery Platform" />
+              <div class="project-card__overlay">
+                <a href="https://github.com/mjawadforogh2005-ship-it/Shotmarket" 
+                   target="_blank" rel="noopener" class="project-card__link">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>LocalStorage</span>
+              </div>
+              <h3 class="project-card__title">ShotMarket – Photo Delivery Platform</h3>
+              <p class="project-card__description">
+                Responsive front-end platform that allows photographers to upload event photos, 
+                generate QR codes for private galleries, and lets customers view, select, and download images.
+              </p>
+              <span class="project-card__role">Front-End Developer · July – August 2026</span>
+                          </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop" 
+                   alt="Little Lemon Restaurant" />
+              <div class="project-card__overlay">
+                <a href="https://github.com/mjawadforogh2005-ship-it/little-lemon" 
+                   target="_blank" rel="noopener" class="project-card__link">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__tags">
+                <span>React</span>
+                <span>JavaScript</span>
+                <span>Form Validation</span>
+                <span>Unit Tests</span>
+              </div>
+              <h3 class="project-card__title">Little Lemon Restaurant</h3>
+              <p class="project-card__description">
+                Responsive restaurant website built with React featuring a table reservation system, 
+                form validation, and unit tests. Capstone project for the Meta Front-End Developer Certificate.
+              </p>
+              <span class="project-card__role">React Developer · August 2026</span>
+            </div>
+          </article>
+          <!-- Project 3 -->
+       <article class="project-card">
+  <div class="project-card__image">
+    <img src="HAVALA.jpg" 
+         alt="Havala – Money Transfer Landing Page" />
+    <div class="project-card__overlay">
+      <a href="https://github.com/mjawadforogh2005-ship-it/baradaran-jafari" 
+         target="_blank" rel="noopener" class="project-card__link">
+        <i class="fab fa-github"></i> View Code
+      </a>
+    </div>
+  </div>
+  <div class="project-card__content">
+    <div class="project-card__tags">
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>JavaScript</span>
+      <span>Netlify</span>
+    </div>
+    <h3 class="project-card__title">Havala – Money Transfer</h3>
+    <p class="project-card__description">
+      A modern, fast, and fully responsive landing page designed for international money transfer and exchange services. Features a trust-focused UI/UX, professional branding, and one-click WhatsApp & phone contact integration for seamless user interaction.
+    </p>
+    <span class="project-card__role">Front-End Developer</span>
+  </div>
+</article>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section__title">Technical Skills</h2>
+        <span class="section__subtitle">Technologies I work with</span>
+
+        <div class="skills__container">
+          <div class="skills__group">
+            <h3 class="skills__group-title"><i class="fas fa-code"></i> Development</h3>
+            <div class="skills__list">
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <span>Java</span>
+                  <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar__fill" style="width: 90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <span>JavaScript / TypeScript</span>
+                  <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar__fill" style="width: 88%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <span>React & Node.js</span>
+                  <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar__fill" style="width: 85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <span>HTML5 & CSS3</span>
+                  <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar__fill" style="width: 92%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <span>Git & GitHub</span>
+                  <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar__fill" style="width: 87%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__group-title"><i class="fas fa-database"></i> Other Technical</h3>
+            <div class="skills__list">
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <span>Python</span>
+                  <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar__fill" style="width: 70%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <span>SQL & Databases</span>
+                  <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar__fill" style="width: 68%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <span>Data Structures & Algorithms</span>
+                  <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar__fill" style="width: 72%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <span>RESTful APIs</span>
+                  <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar__fill" style="width: 65%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <span>Machine Learning Basics</span>
+                  <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar__fill" style="width: 60%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__group-title"><i class="fas fa-paint-brush"></i> Design & Soft Skills</h3>
+            <div class="skills__tags">
+              <span class="skill-tag">Adobe Photoshop</span>
+              <span class="skill-tag">CorelDRAW</span>
+              <span class="skill-tag">Illustrator</span>
+              <span class="skill-tag">Graphic Design</span>
+              <span class="skill-tag">Photography</span>
+              <span class="skill-tag">Project Management</span>
+              <span class="skill-tag">Creative Design</span>
+              <span class="skill-tag">Website Design</span>
+              <span class="skill-tag">Teaching & Mentoring</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EDUCATION ========== -->
+    <section class="education section" id="education">
+      <div class="container">
+        <h2 class="section__title">Education & Certificates</h2>
+        <span class="section__subtitle">Academic journey & achievements</span>
+
+        <div class="education__container">
+          <div class="education__card education__card--main">
+            <div class="education__icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="education__content">
+              <h3>Bachelor of Science in Computer Science</h3>
+              <p class="education__school">Astana IT University · Astana, Kazakhstan</p>
+              <p class="education__period">September 2025 – July 2027 (Expected)</p>
+              <p class="education__gpa">GPA: 3.4 / 4.0</p>
+            </div>
+          </div>
+
+          <div class="education__grid">
+            <div class="education__card">
+              <div class="education__icon education__icon--small">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="education__content">
+                <h3>International Olympiad in Artificial Intelligence (IOAI) 2026</h3>
+                <p class="education__school">Participant · 3rd Edition</p>
+                <p class="education__period">August 2026 · Astana, Kazakhstan</p>
+                <p class="education__desc">Engaged with leading AI professors and young talents from over 100 countries.</p>
+              </div>
+            </div>
+
+            <div class="education__card">
+              <div class="education__icon education__icon--small">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="education__content">
+                <h3>AI-Sana Program – Certificate of Completion</h3>
+                <p class="education__school">Phase I & II · Kazakhstan National AI Program</p>
+                <p class="education__period">May 2026</p>
+                <p class="education__desc">Official certification in artificial intelligence skills.</p>
+              </div>
+            </div>
+
+            <div class="education__card">
+              <div class="education__icon education__icon--small">
+                <i class="fas fa-language"></i>
+              </div>
+              <div class="education__content">
+                <h3>TTC National English Language Course</h3>
+                <p class="education__school">Graduated</p>
+                <p class="education__period">Completed</p>
+              </div>
+            </div>
+
+            <div class="education__card">
+              <div class="education__icon education__icon--small">
+                <i class="fas fa-newspaper"></i>
+              </div>
+              <div class="education__content">
+                <h3>Journalism Studies</h3>
+                <p class="education__school">Afghan Youth Generation Organization</p>
+                <p class="education__period">3 months · Mazar-e-Sharif</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LANGUAGES & INTERESTS ========== -->
+    <section class="languages section" id="languages">
+      <div class="container">
+        <div class="languages__grid">
+          <div class="languages__block">
+            <h2 class="section__title">Languages</h2>
+            <div class="language-list">
+              <div class="language-item">
+                <span class="language-name">Persian</span>
+                <span class="language-level">Native Speaker</span>
+              </div>
+              <div class="language-item">
+                <span class="language-name">English</span>
+                <span class="language-level">C2 (Proficient)</span>
+              </div>
+              <div class="language-item">
+                <span class="language-name">Pashto</span>
+                <span class="language-level">A2</span>
+              </div>
+              <div class="language-item">
+                <span class="language-name">Russian</span>
+                <span class="language-level">A2</span>
+              </div>
+              <div class="language-item">
+                <span class="language-name">Kazakh</span>
+                <span class="language-level">A2</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="languages__block">
+            <h2 class="section__title">Interests</h2>
+            <div class="interests-list">
+              <div class="interest-item">
+                <i class="fas fa-python"></i>
+                <span>Python & Algorithms</span>
+              </div>
+              <div class="interest-item">
+                <i class="fas fa-brain"></i>
+                <span>AI & Machine Learning</span>
+              </div>
+              <div class="interest-item">
+                <i class="fas fa-trophy"></i>
+                <span>Competitive Programming</span>
+              </div>
+              <div class="interest-item">
+                <i class="fas fa-palette"></i>
+                <span>Graphic Design (Adobe Suite)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section__title">Get In Touch</h2>
+        <span class="section__subtitle">Let's build something great together</span>
+
+        <div class="contact__container">
+          <div class="contact__info">
+            <p class="contact__text">
+              I'm currently open to internship opportunities, entry-level developer roles, 
+              freelance front-end projects, and English teaching collaborations. 
+              Feel free to reach out — I'd love to connect.
+            </p>
+
+            <div class="contact__cards">
+              <a href="mailto:255865@astana.it.edu.kz" class="contact-card">
+                <div class="contact-card__icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <h4>Email</h4>
+                  <p>m.jawad.forogh2005@gmial.com</p>
+                  <!-- Replace with personal email when ready -->
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/mohammad-jawad-frogh-4320343b6" 
+                 target="_blank" rel="noopener" class="contact-card">
+                <div class="contact-card__icon"><i class="fab fa-linkedin-in"></i></div>
+                <div>
+                  <h4>LinkedIn</h4>
+                  <p>Mohammad Jawad Frogh</p>
+                </div>
+              </a>
+
+              <a href="https://github.com/mjawadforogh2005-ship-it" 
+                 target="_blank" rel="noopener" class="contact-card">
+                <div class="contact-card__icon"><i class="fab fa-github"></i></div>
+                <div>
+                  <h4>GitHub</h4>
+                  <p>mjawadforogh2005-ship-it</p>
+                </div>
+              </a>
+
+              <div class="contact-card">
+                <div class="contact-card__icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                  <h4>Location</h4>
+                  <p>Astana, Kazakhstan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact__form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="How can I help?" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+            <p class="form-note"> Please note that this message will also be sent to my email address, which I check infrequently.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <p>© <span id="year"></span> Mohammad Jawad Frogh. All rights reserved.</p>
+        <p class="footer__note">Designed & built with care · Available for opportunities</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
